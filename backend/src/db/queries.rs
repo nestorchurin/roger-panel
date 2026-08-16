@@ -37,6 +37,7 @@ pub async fn find_user_by_email(pool: &SqlitePool, email: &str) -> Result<Option
     Ok(user)
 }
 
+#[allow(dead_code)]
 pub async fn find_user_by_id(pool: &SqlitePool, id: &str) -> Result<Option<User>> {
     let user = sqlx::query_as::<_, User>("SELECT * FROM users WHERE id = ?")
         .bind(id)
@@ -46,6 +47,7 @@ pub async fn find_user_by_id(pool: &SqlitePool, id: &str) -> Result<Option<User>
     Ok(user)
 }
 
+#[allow(dead_code)]
 pub async fn user_exists(pool: &SqlitePool) -> Result<bool> {
     let count: (i64,) = sqlx::query_as("SELECT COUNT(*) FROM users")
         .fetch_one(pool)

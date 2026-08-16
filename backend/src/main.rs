@@ -26,6 +26,9 @@ async fn main() -> anyhow::Result<()> {
         .init();
 
     let config = Config::from_env()?;
+
+    std::fs::create_dir_all("data")?;
+
     let db_url = &config.database_url;
 
     let pool = SqlitePoolOptions::new()

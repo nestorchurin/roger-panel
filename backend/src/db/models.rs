@@ -64,6 +64,7 @@ pub struct CreateServer {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, sqlx::FromRow)]
+#[allow(dead_code)]
 pub struct Session {
     pub id: String,
     pub user_id: String,
@@ -73,6 +74,7 @@ pub struct Session {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, sqlx::FromRow)]
+#[allow(dead_code)]
 pub struct Setting {
     pub key: String,
     pub value: String,

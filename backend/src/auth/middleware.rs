@@ -10,6 +10,7 @@ use crate::AppState;
 
 #[derive(Clone, Debug)]
 pub struct AuthUser {
+    #[allow(dead_code)]
     pub user_id: String,
 }
 
