@@ -10,10 +10,19 @@
 
 ## Phase 2: Server Management
 
-- [ ] Sandbox module: namespace isolation (unshare), cgroups v2 (CPU, RAM)
+- [ ] Sandbox module: namespace isolation (unshare), cgroups v2
 - [ ] Start / stop / restart Minecraft servers
 - [ ] Real-time console via WebSocket (xterm.js)
 - [ ] Server CRUD API
+
+### Sandbox resource limits
+
+- [ ] **CPU** — `cpu.max` (quota/period), `cpuset.cpus` (core pinning)
+- [ ] **RAM** — `memory.max`, `memory.high`
+- [ ] **IOPS** — `io.max` (read/write IOPS + bandwidth), `io.stat`
+- [ ] **Network speed** — traffic shaping via `tc` (tbf/htb) on veth pair
+- [ ] **Network usage** — per-server traffic accounting (bytes in/out) via nftables or veth stats
+- [ ] **PIDs** — `pids.max`
 
 ## Phase 3: Files & Backups
 
@@ -24,6 +33,8 @@
 ## Phase 4: Monitoring & Admin
 
 - [ ] CPU / RAM / TPS / player monitoring (cgroup stats + console parsing)
+- [ ] Network traffic stats (live + historical)
+- [ ] IOPS stats (live + historical)
 - [ ] Live charts (recharts)
 - [ ] User management & roles (admin, operator, viewer)
 - [ ] Task scheduler (auto-start/stop, scheduled backups)
