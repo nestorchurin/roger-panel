@@ -56,6 +56,10 @@ The panel must run as **root** (or with `CAP_SYS_ADMIN`) for Linux namespace/cgr
 
 See [ROADMAP.md](ROADMAP.md) for the full development roadmap.
 
+## Made with AI
+
+This project was designed and developed in collaboration with AI (OpenCode / big-pickle).
+
 ## License
 
 MIT
