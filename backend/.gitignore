@@ -1,0 +1,14 @@
+# Rust
+/target
+Cargo.lock
+
+# Data
+/data
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
