@@ -1,12 +1,23 @@
 # Roger Panel — Roadmap
 
+## Design System: Material 3 Expressive
+
+Custom CSS tokens implementation — no heavy UI library. Full control over motion, color, shapes.
+
+- **Color**: Dynamic color theming, 5 tonal palettes (Primary, Secondary, Tertiary, Neutral, Neutral Variant), light/dark
+- **Typography**: Expressive scale (Display, Headline, Title, Body, Label — small/medium/large)
+- **Motion**: Spring-based animations via cubic-bezier tokens (expressive + standard schemes)
+- **Shape**: 5 roundedness levels (extra-small → extra-large), shape morph
+- **Components**: M3-styled buttons, cards, inputs, FABs, navigation, dialogs, sliders
+
 ## Phase 1: Foundation
 
 - [ ] Initialize project (Cargo.toml, package.json)
+- [ ] M3 Expressive design tokens (CSS custom properties: color, typography, shape, motion springs)
 - [ ] Database schema (SQLite migrations): servers, users, sessions, settings
 - [ ] Base Axum server with auth middleware
 - [ ] JWT authentication (login, register)
-- [ ] React layout with routing
+- [ ] React layout with routing + base M3 components (buttons, cards, inputs, nav)
 
 ## Phase 2: Server Management
 

@@ -14,12 +14,17 @@ Self-hosted Minecraft server management panel with Linux-level isolation.
 - **Plugin/Mod Support** — install plugins and mods from the panel
 - **Multi-core** — Paper, Spigot, Purpur, Fabric, Forge, Vanilla, Mohist
 
+## Design
+
+**Material 3 Expressive** — Google's latest design system with emotion-driven UX, spring-based motion, dynamic color theming, and expressive shapes. Implemented via custom CSS tokens (no heavy UI library dependency).
+
 ## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
 | Backend | Rust (Axum) |
 | Frontend | React + Vite + TypeScript |
+| Design System | Material 3 Expressive (custom CSS tokens) |
 | Database | SQLite (SQLx) |
 | Isolation | Linux namespaces + cgroups v2 |
 | Console | WebSocket + xterm.js |
@@ -51,6 +56,14 @@ npm run dev
 ### Requirements
 
 The panel must run as **root** (or with `CAP_SYS_ADMIN`) for Linux namespace/cgroup isolation.
+
+## References
+
+- [Material 3 Expressive](https://m3.material.io/)
+- [M3 Expressive Blog](https://m3.material.io/blog/building-with-m3-expressive)
+- [Motion Physics](https://m3.material.io/styles/motion/overview)
+- [Shape Library](https://m3.material.io/styles/shape/overview-principles)
+- [Color System](https://m3.material.io/styles/color/system/overview)
 
 ## Roadmap
 
