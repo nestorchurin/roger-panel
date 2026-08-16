@@ -18,6 +18,8 @@ Self-hosted Minecraft server management panel with Linux-level isolation.
 
 **Material 3 Expressive** — Google's latest design system with emotion-driven UX, spring-based motion, dynamic color theming, and expressive shapes. Implemented via custom CSS tokens (no heavy UI library dependency).
 
+Key specs: 45 color roles, 30 typography styles (15 baseline + 15 expressive), 10 shape tokens, motion physics (expressive + standard schemes), 6-level elevation system.
+
 ## Tech Stack
 
 | Component | Technology |
