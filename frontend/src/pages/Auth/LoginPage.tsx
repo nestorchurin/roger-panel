@@ -29,7 +29,6 @@ export default function LoginPage() {
     <div className="auth-page">
       <div className="auth-card">
         <div className="auth-header">
-          <span className="material-symbols-outlined auth-icon">sports_esports</span>
           <h1>Roger Panel</h1>
           <p>Sign in to manage your servers</p>
         </div>

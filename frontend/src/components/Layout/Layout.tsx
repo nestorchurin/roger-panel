@@ -22,7 +22,6 @@ export default function Layout() {
     <div className="layout">
       <nav className="sidebar">
         <div className="sidebar-header">
-          <span className="logo-icon">sports_esports</span>
           <span className="logo-text">Roger Panel</span>
         </div>
         <div className="nav-items">
